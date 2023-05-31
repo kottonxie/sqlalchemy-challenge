@@ -5,6 +5,8 @@
 # from sqlalchemy.ext.automap import automap_base
 # from sqlalchemy.orm import Session
 # from sqlalchemy import create_engine, func
+import sys
+sys.path.append("/Users/koltonxie/opt/anaconda3/envs/PythonData/lib/python3.7/site-packages")
 
 from flask import Flask, jsonify
 
@@ -33,7 +35,7 @@ app = Flask(__name__)
 
 #################################################
 # Flask Routes
-#################################################
+#################################################conda install flask
 @app.route("/")
 def home():
     return (
